@@ -1,0 +1,162 @@
+
+#nav_por > .navbar-item{
+
+    width: 20vw;
+    white-space:normal;
+
+}
+body {
+	font-family: 'Lato', sans-serif, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	/* text-transform: uppercase; */
+   }
+
+.has-bg-img {
+	background: url('https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/photo-1484544808355-8ec84e534d75-1.jpg')right bottom;
+	background-size: cover;
+	transition: all 2s ease-in;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+ }
+
+.left-col {
+	padding: 1.5rem 2rem 3rem 0.75rem;
+
+}
+
+.footer {
+	bottom: 0;
+	color: #707070;
+	height: 2em;
+	left: 0;
+	position: relative;
+	font-size: small;
+	width: 100%;
+}
+
+
+.bioconent {
+
+	margin: auto;
+	transition: .3s ease;
+
+}
+
+/* .bioconent:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-10px) scale(1.02);
+  } */
+.bioconent:hover p {
+	background-position: -100% 0;
+}
+
+p {
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #c3c8da 50%);
+	background-size: 200%;
+	background-position: 0 0;
+	display: inline;
+	transition: .5s ease-in-out;
+	line-height: 1.5;
+	/* font-family: raleway, arial, sans-serif; */
+	/* text-transform: uppercase; */
+}
+
+p::first-letter {
+
+	font-size: 200%;
+
+}
+
+figure figcaption {
+	padding: 2em;
+	color: rgba(0, 0, 0, 0.644);
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.12);
+	transform: scale(1.12);
+}
+
+figure.effect-chico:hover img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-chico figcaption {
+	padding: 3em;
+}
+
+
+
+figure.effect-chico figcaption::before {
+	position: relative;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.158);
+	content: '';
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+	padding: 20% 0 20px 0;
+}
+
+
+
+figure.effect-chico p {
+	margin: 0 auto;
+	max-width: 200px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
