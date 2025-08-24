@@ -130,13 +130,13 @@ const Carousel = () => {
                   <div className="card transparent_card">
                     <div className="card-body">
                       <h5 className="title has-text-white">Carolina Across 100 Initiative Survey Data Analysis</h5>
-                      <div style={{display: 'flex', alignItems: 'flex-end', gap: '1rem'}}>
-                        <p className="card-text" style={{flex: 1, margin: 0}}>
+                      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%'}}>
+                        <p className="card-text" style={{marginTop: '1rem', flex: 1}}>
                           Using a suite of data analytics tools, we were able to identify common areas of concern and trends in expectations about
                           recovery from the pandemic. We then created visualizations to present these trends to the initiative's stakeholders, 
                           to inform their decisions about how the university can help communities across the state.
                         </p>
-                        <Link to="/projects/carolina-across-100" className="button is-light is-primary" style={{flexShrink: 0}}>See More</Link>
+                        <Link to="/projects/carolina-across-100" className="button is-light is-primary"  style={{marginTop: '1rem', alignSelf: 'flex-start'}}>See More</Link>
                       </div>
                     </div>
                   </div>
