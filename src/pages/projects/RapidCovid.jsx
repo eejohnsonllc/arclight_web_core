@@ -49,7 +49,7 @@ const RapidCovid = () => {
         <section className="hero is-medium has-bg-img fadeIn">
           <div className="hero-body">
             <div className="container has-text-centered text">
-              <h1 className="has-text-white title is-1" style={{display: 'inline-block'}}>
+              <h1 className="has-text-white title is-1" style={{display: 'inline-block',textShadow: '0 0 10px rgba(71, 102, 98, 1), 0 0 20px rgba(59, 79, 73, 1), 0 0 30px #0ff'}}>
                 RAPID: Examining the Innovative Ecosystem During the COVID-19 Pandemic
               </h1>
             </div>
@@ -58,7 +58,7 @@ const RapidCovid = () => {
       </section>
 
       <a id="backbutton"></a>
-
+, 
       <section className="section">
         <div className="has-text-centered is-centered">
           <a href="https://www.sciencedirect.com/science/article/pii/S0048733321001943?via%3Dihub" target="_blank" rel="noopener noreferrer">

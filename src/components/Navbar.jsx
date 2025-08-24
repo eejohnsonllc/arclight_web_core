@@ -92,10 +92,10 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about" style={{fontWeight: 'bold', border: 'none !important', borderTop: 'none !important', borderBottom: 'none !important', borderLeft: 'none !important', borderRight: 'none !important'}}>About Us</Link>
+                <Link className="nav-link" to="/about" style={{fontWeight: 'bold', border: 'none !important', borderTop: 'none !important', borderBottom: 'none !important', borderLeft: 'none !important', borderRight: 'none !important'}}>About</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact" style={{fontWeight: 'bold', border: 'none !important', borderTop: 'none !important', borderBottom: 'none !important', borderLeft: 'none !important', borderRight: 'none !important'}}>Contact Us</Link>
+                <Link className="nav-link" to="/contact" style={{fontWeight: 'bold', border: 'none !important', borderTop: 'none !important', borderBottom: 'none !important', borderLeft: 'none !important', borderRight: 'none !important'}}>Contact</Link>
               </li>
             </ul>
           </div>

@@ -32,11 +32,11 @@ const Bio = () => {
                 <img 
                   className='is-rounded' 
                   style={{width: '256px', height: '256px', margin: '0 auto'}} 
-                  src="/pictures/evan2.jpg" 
+                  src="/pictures/team/evan_johnson_new.jpg" 
                   alt="Dr. Evan Johnson" 
                 />
               </figure>
-              <h4>Dr. Evan Johnson</h4>
+              <h4 style={{ marginTop: '2rem' }}>Dr. Evan Johnson</h4>
               <div className="biocontent" style={{
                 marginTop: '2rem', 
                 marginLeft: '4rem', 

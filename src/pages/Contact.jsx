@@ -7,7 +7,7 @@ const Contact = () => {
           <div className='container has-text-centered text'>
             <h1
               className='has-text-white title is-1'
-              style={{ display: 'inline-block' }}
+              style={{ display: 'inline-block', textShadow: '0 0 10px rgba(71, 102, 98, 1), 0 0 20px rgba(59, 79, 73, 1), 0 0 30px #0ff' }}
             >
               Contact
             </h1>

@@ -3,7 +3,7 @@ const About = () => {
     {
       name: "Evan Johnson",
       title: "Director",
-      image: "/pictures/team/Evan.jpg",
+      image: "/pictures/team/evan_johnson_new.jpg",
       description: "Dr. Johnson is a policy consultant and researcher as well as a Teaching Assistant Professor at UNC-CH. His research focuses on innovation and public policy, specifically in the energy and small business sectors.",
       social: "https://evanejohnson.com/",
       icon: "fas fa-home"
@@ -41,7 +41,7 @@ const About = () => {
         <section className="hero is-medium has-bg-img fadeIn">
           <div className="hero-body">
             <div className="container has-text-centered text">
-              <h1 className="has-text-white title is-1" style={{display: 'inline-block'}}>About Us</h1>
+              <h1 className="has-text-white title is-1" style={{display: 'inline-block', textShadow: '0 0 10px rgba(71, 102, 98, 1), 0 0 20px rgba(59, 79, 73, 1), 0 0 30px #0ff'}}>What Arclight Analytics Is All About</h1>
             </div>
           </div>
         </section>
