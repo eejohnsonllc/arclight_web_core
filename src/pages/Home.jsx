@@ -285,6 +285,78 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      <style>
+        {`
+          /* Mobile responsive styles for Home page */
+          @media (max-width: 768px) {
+            .container.is-fluid {
+              padding: 0 1rem !important;
+            }
+            .index-heading {
+              font-size: 2.5rem !important;
+            }
+            .title.is-1 {
+              font-size: 2rem !important;
+            }
+            .subtitle {
+              font-size: 1rem !important;
+              line-height: 1.5 !important;
+            }
+            .columns {
+              padding: 1rem !important;
+            }
+            .column {
+              margin-bottom: 1rem !important;
+            }
+            .hero-body {
+              padding: 1rem !important;
+            }
+            .arrow {
+              margin-bottom: 3rem !important;
+              margin-top: 3rem !important;
+            }
+            #client .columns {
+              padding-left: 1rem !important;
+              padding-right: 1rem !important;
+            }
+          }
+          
+          @media (max-width: 576px) {
+            .container.is-fluid {
+              padding: 0 0.5rem !important;
+            }
+            .index-heading {
+              font-size: 2rem !important;
+            }
+            .title.is-1 {
+              font-size: 1.75rem !important;
+            }
+            .subtitle {
+              font-size: 0.95rem !important;
+              line-height: 1.4 !important;
+            }
+            .columns {
+              padding: 0.75rem !important;
+            }
+            .hero-body {
+              padding: 0.75rem !important;
+            }
+            .arrow {
+              margin-bottom: 2rem !important;
+              margin-top: 2rem !important;
+            }
+            #client .columns {
+              padding-left: 0.5rem !important;
+              padding-right: 0.5rem !important;
+            }
+            .button.is-dark {
+              font-size: 0.9rem !important;
+              padding: 0.75rem 1.5rem !important;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };

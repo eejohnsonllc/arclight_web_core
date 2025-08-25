@@ -1,6 +1,20 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
+  const location = useLocation();
+  const [isLogoVisible, setIsLogoVisible] = useState(false);
+
+  useEffect(() => {
+    // Trigger logo animation on route change
+    setIsLogoVisible(false);
+    const timer = setTimeout(() => {
+      setIsLogoVisible(true);
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, [location]);
+
   return (
     <section id='navigation'>
       <style>
@@ -29,12 +43,86 @@ const Navbar = () => {
           .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
             border: none !important;
           }
+          
+          /* Logo animation and text shadow for desktop */
+          .navbar-brand {
+            overflow: hidden;
+          }
+          
+          .navbar-brand img {
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+          }
+          
+          .navbar-brand img.slide-in {
+            transform: translateX(0);
+            opacity: 1;
+          }
+          
+          .navbar-brand img.slide-out {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          
+          /* Desktop-only text shadow effect */
+          @media (min-width: 769px) {
+            .navbar-brand img {
+              filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4)) 
+                      drop-shadow(1px 1px 2px rgba(44, 127, 127, 0.3));
+            }
+            
+            .navbar-brand img:hover {
+              filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5)) 
+                      drop-shadow(2px 2px 4px rgba(44, 127, 127, 0.4));
+              transform: scale(1.02);
+            }
+          }
+          
+          /* Mobile responsive styles */
+          @media (max-width: 768px) {
+            .navbar-brand img {
+              width: 200px !important;
+              height: auto !important;
+            }
+            .nav-link, .dropdown-item {
+              font-size: 1.1rem !important;
+              padding: 0.75rem 1rem !important;
+            }
+            .dropdown-menu {
+              margin-top: 0.5rem !important;
+              border-radius: 8px !important;
+            }
+            .navbar-nav {
+              padding: 1rem 0 !important;
+            }
+          }
+          
+          @media (max-width: 576px) {
+            .navbar-brand img {
+              width: 160px !important;
+              height: auto !important;
+            }
+            .nav-link, .dropdown-item {
+              font-size: 1rem !important;
+              padding: 0.5rem 0.75rem !important;
+            }
+            .container-fluid {
+              padding-left: 1rem !important;
+              padding-right: 1rem !important;
+            }
+          }
         `}
       </style>
       <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light" style={{border: 'none !important', borderTop: 'none !important', borderBottom: 'none !important', borderLeft: 'none !important', borderRight: 'none !important', boxShadow: 'none !important', fontFamily: "'Lato', sans-serif"}}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/" style={{marginLeft: '1.5rem'}}>
-            <img src="/pictures/arclight_logo_horizontal.png" alt="ArcLight Analytics" width="280" height="280" />
+            <img 
+              src="/pictures/arclight_logo_horizontal.png" 
+              alt="ArcLight Analytics" 
+              width="280" 
+              height="280"
+              className={isLogoVisible ? 'slide-in' : 'slide-out'}
+            />
           </Link>
           <button 
             className="navbar-toggler" 

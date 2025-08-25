@@ -26,7 +26,7 @@ const Contact = () => {
             style={{ marginBottom: '3rem', marginTop: '3rem' }}
           >
             <p className='subtitle is-5'>
-              Your data has a story—let’s uncover it together.
+              Your data has a story—let's uncover it together.
             </p>
           </div>
 
@@ -62,6 +62,12 @@ const Contact = () => {
                     <a
                       href='mailto:admin@arclightanalytics.com'
                       className='has-text-link'
+                      style={{
+                        wordBreak: 'break-word',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word',
+                        hyphens: 'auto'
+                      }}
                     >
                       admin@arclightanalytics.com
                     </a>
@@ -138,6 +144,72 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <style>
+        {`
+          /* Mobile responsive contact page */
+          @media (max-width: 768px) {
+            .box {
+              padding: 2rem 1.5rem !important;
+              margin: 0 0.5rem !important;
+            }
+            
+            .icon-text {
+              flex-direction: column !important;
+              align-items: center !important;
+              gap: 0.5rem !important;
+            }
+            
+            .icon-text .icon {
+              margin-bottom: 0.5rem !important;
+            }
+            
+            .icon-text span:last-child {
+              text-align: center !important;
+              word-break: break-word !important;
+              word-wrap: break-word !important;
+              overflow-wrap: break-word !important;
+              hyphens: auto !important;
+              max-width: 100% !important;
+            }
+            
+            .icon-text a {
+              font-size: 1.1rem !important;
+              line-height: 1.4 !important;
+            }
+          }
+          
+          @media (max-width: 576px) {
+            .box {
+              padding: 1.5rem 1rem !important;
+              margin: 0 0.25rem !important;
+            }
+            
+            .icon-text a {
+              font-size: 1rem !important;
+              line-height: 1.3 !important;
+            }
+            
+            .title.is-4 {
+              font-size: 1.5rem !important;
+            }
+            
+            .subtitle.is-5 {
+              font-size: 1rem !important;
+            }
+          }
+          
+          @media (max-width: 480px) {
+            .box {
+              padding: 1rem 0.75rem !important;
+            }
+            
+            .icon-text a {
+              font-size: 0.95rem !important;
+            }
+          }
+        `}
+      </style>
     </>
   );
 };

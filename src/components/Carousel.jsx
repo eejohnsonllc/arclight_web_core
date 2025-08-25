@@ -80,6 +80,79 @@ const Carousel = () => {
             text-indent: -999px !important;
             overflow: hidden !important;
           }
+          
+          /* Mobile responsive styles */
+          @media (max-width: 768px) {
+            #carouselExampleCaptions {
+              height: 400px !important;
+            }
+            .carousel-item {
+              height: 400px !important;
+            }
+            .carousel-control-prev, .carousel-control-next {
+              width: 2.5rem !important;
+              height: 2.5rem !important;
+            }
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+              width: 1.2rem !important;
+              height: 1.2rem !important;
+            }
+            .transparent_card {
+              margin: 1rem !important;
+              padding: 1rem !important;
+            }
+            .transparent_card .title {
+              font-size: 1.2rem !important;
+              margin-bottom: 0.75rem !important;
+            }
+            .transparent_card .card-text {
+              font-size: 0.9rem !important;
+              line-height: 1.4 !important;
+            }
+            .transparent_card .button {
+              font-size: 0.9rem !important;
+              padding: 0.5rem 1rem !important;
+            }
+          }
+          
+          @media (max-width: 576px) {
+            #carouselExampleCaptions {
+              height: 350px !important;
+            }
+            .carousel-item {
+              height: 350px !important;
+            }
+            .carousel-control-prev, .carousel-control-next {
+              width: 2rem !important;
+              height: 2rem !important;
+            }
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+              width: 1rem !important;
+              height: 1rem !important;
+            }
+            .transparent_card {
+              margin: 0.5rem !important;
+              padding: 0.75rem !important;
+            }
+            .transparent_card .title {
+              font-size: 1.1rem !important;
+              margin-bottom: 0.5rem !important;
+            }
+            .transparent_card .card-text {
+              font-size: 0.85rem !important;
+              line-height: 1.3 !important;
+            }
+            .transparent_card .button {
+              font-size: 0.85rem !important;
+              padding: 0.4rem 0.8rem !important;
+            }
+            .carousel-control-prev {
+              left: 0.5rem !important;
+            }
+            .carousel-control-next {
+              right: 0.5rem !important;
+            }
+          }
         `}
       </style>
       <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={{height: '500px'}}>

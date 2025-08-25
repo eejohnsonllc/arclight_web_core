@@ -1,0 +1,281 @@
+/* Mobile-specific optimizations for ArcLight Analytics */
+
+/* Touch-friendly improvements */
+@media (max-width: 768px) {
+  /* Ensure all interactive elements are touch-friendly */
+  button, .button, .btn, a, .nav-link, .dropdown-item {
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+  }
+  
+  /* Improve touch targets */
+  .carousel-control-prev,
+  .carousel-control-next {
+    min-height: 48px;
+    min-width: 48px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+  
+  /* Better mobile navigation */
+  .navbar-nav {
+    gap: 0.5rem;
+  }
+  
+  .dropdown-menu {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Mobile-friendly spacing */
+  .container, .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .section, .hero {
+    padding: 2rem 1rem;
+  }
+  
+  /* Mobile image optimization */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile table responsiveness */
+  table {
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile form improvements */
+  input, textarea, select {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 0.75rem;
+    border-radius: 8px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+  .container, .container-fluid {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .section, .hero {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  /* Stack columns on very small screens */
+  .columns {
+    flex-direction: column;
+  }
+  
+  .column {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+  
+  /* Mobile-friendly buttons */
+  .button, .btn {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Mobile card improvements */
+  .card {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .container, .container-fluid {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .section, .hero {
+    padding: 1rem 0.5rem;
+  }
+  
+  /* Compact mobile layout */
+  .navbar-brand img {
+    width: 140px;
+    height: auto;
+  }
+  
+  /* Mobile-friendly text */
+  h1, .title.is-1 {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  h2, .title.is-2 {
+    font-size: 1.25rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  p, .subtitle {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .carousel-item {
+    height: 70vh;
+  }
+  
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .hero-body {
+    padding: 1rem;
+  }
+}
+
+/* High DPI mobile devices */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .navbar-brand img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Mobile performance optimizations */
+@media (max-width: 768px) {
+  /* Reduce animations on mobile for better performance */
+  .animated, [data-aos] {
+    animation-duration: 0.6s !important;
+  }
+  
+  /* Optimize transitions */
+  * {
+    transition-duration: 0.2s !important;
+  }
+  
+  /* Reduce box shadows on mobile for performance */
+  .card, .button, .btn {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+/* Mobile accessibility improvements */
+@media (max-width: 768px) {
+  /* Ensure sufficient color contrast */
+  .transparent_card {
+    background-color: rgba(14, 14, 14, 0.7) !important;
+  }
+  
+  /* Better focus indicators for mobile */
+  button:focus, .button:focus, .btn:focus,
+  a:focus, .nav-link:focus, .dropdown-item:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+  /* Improve readability on mobile */
+  .text-muted, .text-secondary {
+    color: #6c757d !important;
+  }
+}
+
+/* Mobile-specific utility classes */
+.mobile-hidden {
+  display: none !important;
+}
+
+.mobile-visible {
+  display: block !important;
+}
+
+@media (min-width: 769px) {
+  .mobile-hidden {
+    display: block !important;
+  }
+  
+  .mobile-visible {
+    display: none !important;
+  }
+}
+
+/* Mobile grid system improvements */
+@media (max-width: 768px) {
+  .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+  .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* Mobile footer improvements */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile loading states */
+@media (max-width: 768px) {
+  .loading, .spinner {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .skeleton {
+    height: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Ensure Futura typography is maintained on mobile */
+@media (max-width: 768px) {
+  /* Maintain Futura Bold for headings on mobile */
+  h1, h2, h3, h4, h5, h6, .title, .index-heading {
+    font-family: 'Futura', 'Futura-Bold', 'Trebuchet MS', Arial, sans-serif !important;
+    font-weight: bold !important;
+  }
+  
+  /* Maintain Futura Thin for body text on mobile */
+  body, p, .subtitle, .card-text, .content, .description, .text-content {
+    font-family: 'Futura', 'Futura-Thin', 'Trebuchet MS', Arial, sans-serif !important;
+    font-weight: 300 !important;
+  }
+  
+  /* Maintain Futura Bold for navigation on mobile */
+  .nav-link, .dropdown-item, .button, .btn, .nav-item {
+    font-family: 'Futura', 'Futura-Bold', 'Trebuchet MS', Arial, sans-serif !important;
+    font-weight: bold !important;
+  }
+}

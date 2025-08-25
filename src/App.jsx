@@ -9,6 +9,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'aos/dist/aos.css';
 import './css/styles.css';
+import './css/mobile.css';
 import './css/hover.css';
 import './css/top.css';
 import './css/about.css';
@@ -18,6 +19,7 @@ import './css/contact.css';
 // Import components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import MobileOptimizer from './components/MobileOptimizer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -41,8 +43,6 @@ function App() {
         {`
           /* Global Button Styles */
           .button, button, .btn {
-            font-family: 'Futura', 'Futura-Bold', 'Trebuchet MS', Arial, sans-serif !important;
-            font-weight: bold !important;
             border-radius: 8px !important;
             transition: all 0.2s ease !important;
           }
@@ -92,6 +92,7 @@ function App() {
         `}
       </style>
       <div className="App">
+        <MobileOptimizer />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
