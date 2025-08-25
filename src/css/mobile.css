@@ -132,10 +132,6 @@
 
 /* Landscape mobile orientation */
 @media (max-width: 768px) and (orientation: landscape) {
-  .carousel-item {
-    height: 70vh;
-  }
-  
   .navbar {
     padding: 0.5rem 1rem;
   }
