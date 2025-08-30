@@ -53,7 +53,7 @@ const About = () => {
                     '0 0 10px rgba(71, 102, 98, 1), 0 0 20px rgba(59, 79, 73, 1), 0 0 30px #0ff',
                 }}
               >
-                What Arclight Analytics Is All About
+                What is Arclight Analytics?
               </h1>
             </div>
           </div>

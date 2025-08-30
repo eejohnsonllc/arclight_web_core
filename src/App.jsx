@@ -28,7 +28,7 @@ import Bio from './pages/Bio';
 import CarolinaAcross100 from './pages/projects/CarolinaAcross100';
 import SbirSttr from './pages/projects/SbirSttr';
 import RapidCovid from './pages/projects/RapidCovid';
-import GrantExplorer from './pages/projects/GrantExplorer';
+
 
 function App() {
   useEffect(() => {
@@ -103,7 +103,7 @@ function App() {
           <Route path="/projects/carolina-across-100" element={<CarolinaAcross100 />} />
           <Route path="/projects/sbir-sttr" element={<SbirSttr />} />
           <Route path="/projects/rapid-covid" element={<RapidCovid />} />
-          <Route path="/projects/grant-explorer" element={<GrantExplorer />} />
+         
         </Routes>
         <Footer />
       </div>

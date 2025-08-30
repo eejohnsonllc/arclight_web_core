@@ -172,11 +172,7 @@ const Navbar = () => {
                       SBIR/STTR Programs Review
                     </Link>
                   </li>
-                  <li>
-                    <Link className="dropdown-item" to="/projects/grant-explorer" style={{fontWeight: 'bold', whiteSpace: 'normal', wordWrap: 'break-word', maxWidth: '300px'}}>
-                      Grant Abstract Text Explorer
-                    </Link>
-                  </li>
+                
                 </ul>
               </li>
               <li className="nav-item">
