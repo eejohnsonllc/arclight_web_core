@@ -28,12 +28,12 @@ import Bio from './pages/Bio';
 import CarolinaAcross100 from './pages/projects/CarolinaAcross100';
 import SbirSttr from './pages/projects/SbirSttr';
 import RapidCovid from './pages/projects/RapidCovid';
-
+import SmallBizNeeds from './pages/projects/SmallBizNeeds';
 
 function App() {
   useEffect(() => {
     AOS.init({
-      once: true
+      once: true,
     });
   }, []);
 
@@ -91,19 +91,22 @@ function App() {
           }
         `}
       </style>
-      <div className="App">
+      <div className='App'>
         <MobileOptimizer />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/bio" element={<Bio />} />
-          <Route path="/projects/carolina-across-100" element={<CarolinaAcross100 />} />
-          <Route path="/projects/sbir-sttr" element={<SbirSttr />} />
-          <Route path="/projects/rapid-covid" element={<RapidCovid />} />
-         
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/bio' element={<Bio />} />
+          <Route
+            path='/projects/carolina-across-100'
+            element={<CarolinaAcross100 />}
+          />
+          <Route path='/projects/sbir-sttr' element={<SbirSttr />} />
+          <Route path='/projects/rapid-covid' element={<RapidCovid />} />
+          <Route path='/projects/small-biz-needs' element={<SmallBizNeeds />} />
         </Routes>
         <Footer />
       </div>

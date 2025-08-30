@@ -82,47 +82,75 @@ const Carousel = () => {
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
           }
           
-          /* Carousel Indicators (thin lines) */
+          /* Carousel Indicators (flat horizontal lines) */
           .carousel-indicators {
             bottom: 5px !important;
             margin-bottom: 0 !important;
           }
           
           .carousel-indicators button {
-            width: 3px !important;
-            height: 3px !important;
-            border-radius: 50% !important;
-            margin: 0 2px !important;
+            width: 30px !important;
+            height: 8px !important;
+            margin: 0 4px !important;
             opacity: 0.4 !important;
             background-color: #2C7F7F !important;
             border: none !important;
+            border-radius: 4px !important;
             text-indent: 0 !important;
             box-shadow: none !important;
+            padding: 0 !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
           }
           
           .carousel-indicators button.active {
             opacity: 1 !important;
             background-color: #2C7F7F !important;
+            height: 12px !important;
+            cursor: pointer !important;
+          }
+          
+          .carousel-indicators button:hover {
+            opacity: 0.7 !important;
+            background-color: #2C7F7F !important;
+            cursor: pointer !important;
+          }
+          
+          .carousel-indicators button:focus {
+            cursor: pointer !important;
           }
           
           .carousel-indicators [data-bs-target] {
-            width: 3px !important;
-            height: 3px !important;
-            border-radius: 50% !important;
-            background-color: #2C7F7F !important;
-            border: none !important;
-            clip-path: none !important;
+            cursor: pointer !important;
           }
           
+          /* Override any Bootstrap default styles */
+          .carousel-indicators button,
+          .carousel-indicators [data-bs-target],
           #carouselExampleCaptions .carousel-indicators button {
-            width: 3px !important;
-            height: 3px !important;
-            border-radius: 50% !important;
+            width: 30px !important;
+            height: 8px !important;
+            margin: 0 4px !important;
+            opacity: 0.4 !important;
             background-color: #2C7F7F !important;
             border: none !important;
+            border-radius: 4px !important;
+            text-indent: 0 !important;
+            box-shadow: none !important;
+            padding: 0 !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
             clip-path: none !important;
-            text-indent: -999px !important;
-            overflow: hidden !important;
+            overflow: visible !important;
+          }
+          
+          .carousel-indicators button.active,
+          .carousel-indicators [data-bs-target].active,
+          #carouselExampleCaptions .carousel-indicators button.active {
+            opacity: 1 !important;
+            background-color: #2C7F7F !important;
+            height: 12px !important;
+            cursor: pointer !important;
           }
 
           /* Transparent card styling */

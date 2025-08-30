@@ -28,9 +28,19 @@ export let projects = [
         tab: ['policy-evaluation-tab'],
         projectimg: 'https://www.nap.edu/cover/25674/450',
         link: '/projects/sbir-sttr'
-    }, 
+    },
     {
         projectid: 4,
+        projectname: 'Small Business Innovation Applied to National Needs',
+        projectkeywords: ['SBIR Research', 'Innovation Policy', 'Economic Analysis', 'National Security'],
+        projctdescription: "Dr. Evan Johnson co-authored groundbreaking research on the Small Business Innovation Research (SBIR) program and its critical role in advancing national technological needs. This NBER working paper reveals that SBIR-backed businesses produce three times more patents per firm and nearly eight times the federal contract engagement than their venture capital-backed counterparts.",
+        projectspan: [],
+        tab: ['policy-evaluation-tab', 'data-analysis-tab'],
+        projectimg: './pictures/arclight_logo_horizontal.png',
+        link: '/projects/small-biz-needs'
+    },
+    {
+        projectid: 5,
         projectname: 'Grant Abstract Text Explorer',
         projectkeywords: ['COVID-19', 'Survey Analysis', 'Data Visualization'],
         projctdescription: "We built this tool to allow users to search the abstracts of 154,135 grant awards from 11 federal award agencies using key words. The tool shows users a table with descriptive information on all grants that include the search term in their abstracts, as well as visualizations that show which agencies these results come from, trends of awards over time, and whether the grants were awarded to socially and economically disadvantaged or women awardees. This tool can be used for a variety of purposes, from conducting research on a specific topic to informing future grant applications.",
