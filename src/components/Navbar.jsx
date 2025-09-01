@@ -91,9 +91,23 @@ const Navbar = () => {
             .dropdown-menu {
               margin-top: 0.5rem !important;
               border-radius: 8px !important;
+              position: static !important;
+              float: none !important;
+              width: 100% !important;
+              background-color: #f8f9fa !important;
+              border: 1px solid #dee2e6 !important;
             }
             .navbar-nav {
               padding: 1rem 0 !important;
+            }
+            .navbar-collapse {
+              background-color: rgba(248, 249, 250, 0.95) !important;
+              border-radius: 8px !important;
+              margin-top: 0.5rem !important;
+              padding: 1rem !important;
+            }
+            .dropdown-toggle::after {
+              display: inline-block !important;
             }
           }
           
@@ -109,6 +123,33 @@ const Navbar = () => {
             .container-fluid {
               padding-left: 1rem !important;
               padding-right: 1rem !important;
+            }
+            .dropdown-menu {
+              font-size: 0.9rem !important;
+            }
+            .navbar-collapse {
+              margin-top: 0.25rem !important;
+              padding: 0.75rem !important;
+            }
+          }
+          
+          /* Ensure dropdown works on mobile */
+          @media (max-width: 991px) {
+            .navbar-nav .dropdown-menu {
+              position: static !important;
+              float: none !important;
+              width: 100% !important;
+              margin-top: 0.5rem !important;
+              background-color: #f8f9fa !important;
+              border: 1px solid #dee2e6 !important;
+              border-radius: 8px !important;
+            }
+            .dropdown-item {
+              padding: 0.5rem 1rem !important;
+              border-bottom: 1px solid #e9ecef !important;
+            }
+            .dropdown-item:last-child {
+              border-bottom: none !important;
             }
           }
         `}

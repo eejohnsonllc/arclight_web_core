@@ -76,6 +76,10 @@ body {
   
   .team-boxed .item img {
 	max-width:160px;
+	width: 160px;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 50%;
   }
   
 
