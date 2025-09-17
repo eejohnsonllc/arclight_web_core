@@ -36,6 +36,15 @@ const About = () => {
       social: 'https://www.linkedin.com/in/megan-doherty-31b3981aa/',
       icon: 'fab fa-linkedin',
     },
+    {
+      name: 'Ashley Cox',
+      title: 'Administrative Analyst ',
+      image: '/pictures/team/Ashley.jpeg',
+      description:
+        'Ashley earned her B.A. degree in Public Policy from UNC-CH in 2024. At Arclight, she provides administrative support, including communication with clients, as well as general data analysis.',
+      social: 'https://www.linkedin.com/in/ashley-cox-9a24b1315/',
+      icon: 'fab fa-linkedin',
+    }
   ];
 
   return (

@@ -75,11 +75,12 @@ body {
   }
   
   .team-boxed .item img {
-	max-width:160px;
-	width: 160px;
-	height: 160px;
-	object-fit: cover;
-	border-radius: 50%;
+width: 120px;           /* smaller than the card width */
+  height: 120px;
+  object-fit: cover;      /* crop instead of stretch */
+  border-radius: 50%;     /* perfect circle */
+  margin: 0 auto 15px;    /* center the image */
+  display: block;
   }
   
 
