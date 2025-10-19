@@ -15,6 +15,7 @@ import './css/top.css';
 import './css/about.css';
 import './css/bio.css';
 import './css/contact.css';
+import './css/alumni.css';
 
 // Import components
 import Navbar from './components/Navbar';
@@ -22,6 +23,7 @@ import Footer from './components/Footer';
 import MobileOptimizer from './components/MobileOptimizer';
 import Home from './pages/Home';
 import About from './pages/About';
+import Alumni from './pages/Alumni';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Bio from './pages/Bio';
@@ -97,6 +99,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/alumni' element={<Alumni />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/bio' element={<Bio />} />

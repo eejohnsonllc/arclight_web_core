@@ -10,39 +10,21 @@ const About = () => {
       icon: 'fas fa-home',
     },
     {
-      name: 'Yukun Yang',
-      title: ' Data Scientist ',
-      image: '/pictures/team/Yukun.jpg',
-      description:
-        'Yukun earned his M.S. degree in Information Science from UNC-CH. At Arclight, he works to identify data needs and opportunities, adopt the best practices for data collection, and render visually appealing data visualizations.',
-      social: 'https://yukunyang.info/',
-      icon: 'fas fa-home',
-    },
-    {
-      name: 'Savannah Dowden',
-      title: 'Research Analyst ',
-      image: '/pictures/team/Savannah.jpg',
-      description:
-        'Savannah earned her B.S. degree in Public Policy and Statistics from UNC-CH in May of 2021. At Arclight, she works to clean datasets, perform data analysis, and assists in developing research methodologies.',
-      social: 'https://www.linkedin.com/in/savannah-dowden-8b046017a/',
-      icon: 'fab fa-linkedin',
-    },
-    {
-      name: 'Megan Doherty',
-      title: 'Administrative Analyst ',
-      image: '/pictures/team/Megan.jpg',
-      description:
-        'Megan earned her B.S. degree in Biology and minors in Environmental Science, Mandarin, and Chemistry from UNC-CH in 2022. At Arclight, she provides administrative support, performs data analysis, and assists in report writing.',
-      social: 'https://www.linkedin.com/in/megan-doherty-31b3981aa/',
-      icon: 'fab fa-linkedin',
-    },
-    {
       name: 'Ashley Cox',
       title: 'Administrative Analyst ',
       image: '/pictures/team/Ashley.jpeg',
       description:
         'Ashley earned her B.A. degree in Public Policy from UNC-CH in 2024. At Arclight, she provides administrative support, including communication with clients, as well as general data analysis.',
       social: 'https://www.linkedin.com/in/ashley-cox-9a24b1315/',
+      icon: 'fab fa-linkedin',
+    },
+    {
+      name: 'Erin Flanagan',
+      title: 'Administrative Analyst ',
+      image: '/pictures/team/Erin.jpeg',
+      description:
+        'Erin Flanagan is a senior Honors student at UNC-CH pursuing a B.A. degree in Environmental Studies. She is interested in the ways that economic, political, and social systems impact the health of people and the environment. Erin has a background in natural science research and worked as a research assistant at the Highlands Biological Station (HBS) during the 2024 semester. Here she aided Dr. Jerry Miller’s team with data collection and analysis for their groundbreaking research on atmospheric microplastic deposition in the Southern Appalachians pre and post-Hurricane Helene. Erin is a 2025 UNC Summer Undergraduate Research Fellow, and co-leads a research team analysing the link between atmospheric deposition of microplastics and their incorporation into a Southern Appalachian food chain. Erin brings her experience in data collection, analysis, and visualization to ArcLight where she works as a Research Analyst.',
+      social:'https://www.linkedin.com/in/erin-m-flanagan/',
       icon: 'fab fa-linkedin',
     }
   ];

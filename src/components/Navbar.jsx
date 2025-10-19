@@ -385,6 +385,22 @@ const Navbar = () => {
               <li className='nav-item'>
                 <Link
                   className='nav-link'
+                  to='/alumni'
+                  style={{
+                    fontWeight: 'bold',
+                    border: 'none !important',
+                    borderTop: 'none !important',
+                    borderBottom: 'none !important',
+                    borderLeft: 'none !important',
+                    borderRight: 'none !important',
+                  }}
+                >
+                  Alumni
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link
+                  className='nav-link'
                   to='/contact'
                   style={{
                     fontWeight: 'bold',
