@@ -20,10 +20,10 @@ const About = () => {
     },
     {
       name: 'Erin Flanagan',
-      title: 'Administrative Analyst ',
+      title: 'Research Analyst ',
       image: '/pictures/team/Erin.jpeg',
       description:
-        'Erin Flanagan is a senior Honors student at UNC-CH pursuing a B.A. degree in Environmental Studies. She is interested in the ways that economic, political, and social systems impact the health of people and the environment. Erin has a background in natural science research and worked as a research assistant at the Highlands Biological Station (HBS) during the 2024 semester. Here she aided Dr. Jerry Miller’s team with data collection and analysis for their groundbreaking research on atmospheric microplastic deposition in the Southern Appalachians pre and post-Hurricane Helene. Erin is a 2025 UNC Summer Undergraduate Research Fellow, and co-leads a research team analysing the link between atmospheric deposition of microplastics and their incorporation into a Southern Appalachian food chain. Erin brings her experience in data collection, analysis, and visualization to ArcLight where she works as a Research Analyst.',
+        'Erin Flanagan is a senior Honors student at UNC-CH pursuing a B.A. degree in Environmental Studies. She is interested in the ways that economic, political, and social systems impact the health of people and the environment.',
       social:'https://www.linkedin.com/in/erin-m-flanagan/',
       icon: 'fab fa-linkedin',
     }
