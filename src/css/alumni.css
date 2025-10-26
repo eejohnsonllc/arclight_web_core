@@ -2,171 +2,197 @@
    Global Styles
 ========================= */
 body {
-  font-family: 'Lato', sans-serif, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-}
-
-/* Navbar Adjustments */
-#nav_por > .navbar-item {
-  width: 20vw;
-  white-space: normal;
-}
-
-/* =========================
-   Alumni Intro
-========================= */
-.alumni-intro {
-  text-align: center;
-  margin-bottom: 1rem; /* tighter spacing before cards */
-}
-
-.alumni-intro h1,
-.alumni-intro p {
-  margin-bottom: 1rem;
-}
-
-/* =========================
-   Alumni Section
-========================= */
-.alumni-section {
-  padding-top: 1rem;    /* reduced top spacing */
-  padding-bottom: 2rem; /* reduced bottom spacing */
-  text-align: center;
-}
-
-/* Team Box Container */
-.team-boxed {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.team-boxed h2 {
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  color: inherit;
-}
-
-.team-boxed .intro {
-  font-size: 16px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.team-boxed .intro p {
-  margin-bottom: 0;
-}
-
-/* =========================
-   People Cards
-========================= */
-.team-boxed .people {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem; /* tighter spacing between cards */
-  padding: 0; /* remove extra padding */
-}
-
-.team-boxed .item {
-  text-align: center;
-}
-
-.team-boxed .item .box {
-  text-align: center;
-  padding: 20px;       /* smaller padding inside card */
-  background-color: #fff;
-  margin-bottom: 15px; /* less vertical spacing between rows */
-  transition: transform 0.2s;
-}
-
-.team-boxed .item .box:hover {
-  transform: translateY(-5px);
-}
-
-.team-boxed .item img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 15px;
-  display: block;
-}
-
-.team-boxed .item .name {
-  font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  color: inherit;
-}
-
-.team-boxed .item .title {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #d0d0d0;
-  letter-spacing: 2px;
-  font-size: 13px;
-  margin-bottom: 10px;
-}
-
-.team-boxed .item .description {
-  font-size: 15px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-/* Social Icons */
-.team-boxed .item .social a {
-  color: inherit;
-  margin: 0 5px;
-  font-size: 16px;
-}
-
-/* =========================
-   Hero Section
-========================= */
-.has-bg-img {
-  background-color: #cddafd;
-  background-size: cover;
-  transition: all 2s ease-in;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 5s;
-  animation-fill-mode: both;
-}
-
-/* =========================
-   Responsive Adjustments
-========================= */
-@media (max-width: 767px) {
-  .team-boxed h2 {
-    margin-bottom: 25px;
-    padding-top: 25px;
-    font-size: 24px;
+	font-family: 'Lato', sans-serif, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   }
   
+  h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+  }
+  
+  /* Navbar Adjustments */
+  #nav_por > .navbar-item {
+	width: 20vw;
+	white-space: normal;
+  }
+  
+  /* =========================
+	 Alumni Intro
+  ========================= */
+  .alumni-intro {
+	text-align: center;
+	margin-bottom: 1rem; /* tighter spacing before cards */
+  }
+  
+  .alumni-intro h1,
+  .alumni-intro p {
+	margin-bottom: 1rem;
+  }
+  
+  /* =========================
+	 Alumni Section
+  ========================= */
+  .alumni-section {
+	padding-top: 0.5rem !important;   /* was 1rem */
+	margin-top: -1rem !important;   /* reduced bottom spacing */
+	text-align: center;
+  }
+
+  .section.is-white.has-text-centered + .section.is-white.has-text-centered {
+	margin-top: -1rem;   /* pull sections closer together */
+  }
+  
+  /* Team Box Container */
+  .team-boxed {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 1200px;
+  }
+  
+  .team-boxed h2 {
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	color: inherit;
+  }
+  
+  .team-boxed .intro {
+	font-size: 16px;
+	max-width: 500px;
+	margin: 0 auto;
+  }
+  
+  .team-boxed .intro p {
+	margin-bottom: 0;
+  }
+  
+  /* =========================
+	 People Cards
+  ========================= */
   .team-boxed .people {
-    gap: 0.5rem; /* tighter spacing on mobile */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem; /* tighter spacing between cards */
+	padding: 0; /* remove extra padding */
+  }
+  
+  .team-boxed .item {
+	text-align: center;
   }
   
   .team-boxed .item .box {
-    padding: 15px;
-    margin-bottom: 10px;
+	text-align: center;
+	padding: 20px;       /* smaller padding inside card */
+	background-color: #fff;
+	margin-bottom: 15px; /* less vertical spacing between rows */
+	transition: transform 0.2s;
   }
-}
+  
+  .team-boxed .item .box:hover {
+	transform: translateY(-5px);
+  }
+  
+  .team-boxed .item img {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 0 auto 15px;
+	display: block;
+  }
+  
+  .team-boxed .item .name {
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	color: inherit;
+  }
+  
+  .team-boxed .item .title {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #d0d0d0;
+	letter-spacing: 2px;
+	font-size: 13px;
+	margin-bottom: 10px;
+  }
+  
+  .team-boxed .item .description {
+	font-size: 15px;
+	margin-top: 0;
+	margin-bottom: 10px;
+  }
+  
+  /* Social Icons */
+  .team-boxed .item .social a {
+	color: inherit;
+	margin: 0 5px;
+	font-size: 16px;
+  }
+  
+  /* =========================
+	 Hero Section
+  ========================= */
+  .has-bg-img {
+	background-color: #cddafd;
+	background-size: cover;
+	transition: all 2s ease-in;
+  }
+  
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
+  .fadeIn {
+	animation-name: fadeIn;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+  }
+  
+  /* =========================
+	 Responsive Adjustments
+  ========================= */
+  @media (max-width: 767px) {
+	.team-boxed h2 {
+	  margin-bottom: 25px;
+	  padding-top: 25px;
+	  font-size: 24px;
+	}
+	
+	.team-boxed .people {
+	  gap: 0.5rem; /* tighter spacing on mobile */
+	}
+	
+	.team-boxed .item .box {
+	  padding: 15px;
+	  margin-bottom: 10px;
+	}
+  }
+
+  /* =========================
+   Background colors for team sections
+========================= */
+
+/* Light teal backgrounds */
+.current-team {
+	background-color: #e6f7f7; /* soft teal */
+  }
+  
+  .alumni-section {
+	background-color: #dff3f2; /* slightly lighter teal */
+	padding-top: 0.5rem !important;
+	margin-top: -1rem !important;
+  }
+  
+  /* Optional: subtle divider shadow between them */
+  .current-team {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  
