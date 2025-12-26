@@ -59,7 +59,7 @@ const Alumni = () => {
           
             <div className='columns is-centered alumni-intro'>
               <div className='column is-half'>
-                <h1 className='subtitle is-1 is-muted'>Our Alumni Team</h1>
+                <h1 className='subtitle is-1 is-muted'>Our Past Team Members</h1>
                 <p>
                   At Arclight Analytics, we are deeply grateful to our alumni for their dedication, talent, and lasting contributions. Each member of our alumni team played an important role in shaping our culture of innovation, collaboration, and excellence. Though they’ve moved on to new opportunities, their influence continues to guide our work and inspire the next generation of Arclight innovators.
                 </p>
