@@ -14,7 +14,7 @@ const About = () => {
       title: 'Administrative Analyst',
       image: '/pictures/team/Ashley.jpeg',
       description:
-        'Ashley earned her B.A. degree in Public Policy from UNC-CH in 2024. At Arclight, she provides administrative support, including communication with clients, as well as general data analysis.',
+        "Ashley earned her B.A. degree in Public Policy from UNC-CH in 2024. At Arclight, she leads and supports data analysis on several of the firm's research projects, contributing database design, statistical analysis, and figures and findings to client reports. She also provides administrative support, including client communication.",
       social: 'https://www.linkedin.com/in/ashley-cox-9a24b1315/',
       icon: 'fab fa-linkedin',
     },
@@ -27,6 +27,39 @@ const About = () => {
       social: 'https://www.linkedin.com/in/erin-m-flanagan/',
       icon: 'fab fa-linkedin',
     },
+    {
+      name: 'Jessica Anderson',
+      title: 'Research Analyst',
+      image: '/pictures/team/Jessica.png',
+      description:
+        'Ms. Anderson is a policy consultant, the Mayor of Chapel Hill, and a Professor of the Practice in Public Policy at UNC‑Chapel Hill. Her work focuses on applied public policy, organizational effectiveness, governance and leadership, and community-driven economic development.',
+      social: 'https://www.linkedin.com/in/jess-anderson-9a31036/',
+      icon: 'fab fa-linkedin',
+    },
+    {
+      name: 'Bella Vandersall',
+      title: 'Research Analyst',
+      image: '/pictures/team/Bella.png',
+      description:
+        'Bella earned her B.A degrees in Public Policy and Economics from UNC-CH in 2026 and is now pursuing a Master of Public Policy. At Arclight, she supports research, data analysis, and the development of full-stack web tools for applied policy research.',
+      social: 'https://www.linkedin.com/in/bella-vandersall/',
+      icon: 'fab fa-linkedin',
+
+    },
+    {
+      name: 'Taylor Holcombe',
+      title: 'Research Analyst',
+      image:'/pictures/team/Taylor.jpeg',
+      description:' Taylor serves as the primary administrator, providing administrative support, including client communication, organization, and day-to-day coordination. At Arclight, Taylor alos supports general data analysis and assists with a range of administrative tasks to help ensure everything runs smoothly. '
+    },
+    {
+      name: 'Richard Yvarra',
+      title: 'Webmaster',
+      image: '/pictures/team/richard.png',
+      description: "Richard is a web developer and designer with a passion for creating beautiful and functional websites. He is the webmaster for Arclight Analytics and is responsible for the design and development of the firm's website.",
+      social: 'https://www.linkedin.com/in/richard-yvarra/',
+      icon: 'fab fa-linkedin',
+    }
   ];
 
   const alumniTeam = [
@@ -79,8 +112,10 @@ const About = () => {
                       src={member.image}
                       alt={member.name}
                     />
-                    <h3 className='name'>{member.name}</h3>
-                    <p className='title'>{member.title}</p>
+                    <div className='member-header'>
+                      <h3 className='name'>{member.name}</h3>
+                      <p className='member-title'>{member.title}</p>
+                    </div>
                     <p className='description'>{member.description}</p>
                     <div className='social'>
                       <a

@@ -82,27 +82,11 @@ const Alumni = () => {
                           src={member.image}
                           alt={member.name}
                         />
-                        <h3 className='name'>{member.name}</h3>
-                        <p
-                          className='title'
-                          style={{
-                            marginBottom: '15px',
-                            display: 'block',
-                            clear: 'both',
-                          }}
-                        >
-                          {member.title}
-                        </p>
-                        <p
-                          className='description'
-                          style={{
-                            marginTop: '0',
-                            display: 'block',
-                            clear: 'both',
-                          }}
-                        >
-                          {member.description}
-                        </p>
+                        <div className='member-header'>
+                          <h3 className='name'>{member.name}</h3>
+                          <p className='member-title'>{member.title}</p>
+                        </div>
+                        <p className='description'>{member.description}</p>
                         <div className='social'>
                           <a
                             href={member.social}
