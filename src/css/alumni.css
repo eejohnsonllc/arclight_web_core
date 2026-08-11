@@ -113,16 +113,26 @@ body {
 	color: inherit;
   }
   
-  .team-boxed .item .title {
+  .team-boxed .item .member-header {
+	display: block;
+	width: 100%;
+  }
+
+  .team-boxed .item .member-title {
+	display: block;
+	width: 100%;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #d0d0d0;
 	letter-spacing: 2px;
 	font-size: 13px;
+	margin-top: 0;
 	margin-bottom: 10px;
   }
   
   .team-boxed .item .description {
+	display: block;
+	width: 100%;
 	font-size: 15px;
 	margin-top: 0;
 	margin-bottom: 10px;
