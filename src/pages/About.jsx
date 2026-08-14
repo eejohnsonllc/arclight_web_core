@@ -10,30 +10,21 @@ const About = () => {
       icon: 'fas fa-home',
     },
     {
+      name: 'Jessica Anderson',
+      title: 'Senior Policy Advisor',
+      image: '/pictures/team/Jessica.png',
+      description:
+        'Ms. Anderson is a policy consultant, the Mayor of Chapel Hill, and a Professor of the Practice in Public Policy at UNC‑Chapel Hill. Her work focuses on applied public policy, organizational effectiveness, governance and leadership, and community-driven economic development.',
+      social: 'https://www.linkedin.com/in/jess-anderson-9a31036/',
+      icon: 'fab fa-linkedin',
+    },
+    {
       name: 'Ashley Cox',
       title: 'Administrative Analyst',
       image: '/pictures/team/Ashley.jpeg',
       description:
         "Ashley earned her B.A. degree in Public Policy from UNC-CH in 2024. At Arclight, she leads and supports data analysis on several of the firm's research projects, contributing database design, statistical analysis, and figures and findings to client reports. She also provides administrative support, including client communication.",
       social: 'https://www.linkedin.com/in/ashley-cox-9a24b1315/',
-      icon: 'fab fa-linkedin',
-    },
-    {
-      name: 'Erin Flanagan',
-      title: 'Research Analyst',
-      image: '/pictures/team/Erin.jpeg',
-      description:
-        'Erin Flanagan is a senior Honors student at UNC-CH pursuing a B.A. degree in Environmental Studies. She is interested in the ways that economic, political, and social systems impact the health of people and the environment.',
-      social: 'https://www.linkedin.com/in/erin-m-flanagan/',
-      icon: 'fab fa-linkedin',
-    },
-    {
-      name: 'Jessica Anderson',
-      title: 'Research Analyst',
-      image: '/pictures/team/Jessica.png',
-      description:
-        'Ms. Anderson is a policy consultant, the Mayor of Chapel Hill, and a Professor of the Practice in Public Policy at UNC‑Chapel Hill. Her work focuses on applied public policy, organizational effectiveness, governance and leadership, and community-driven economic development.',
-      social: 'https://www.linkedin.com/in/jess-anderson-9a31036/',
       icon: 'fab fa-linkedin',
     },
     {
@@ -90,6 +81,15 @@ const About = () => {
       social: 'https://www.linkedin.com/in/megan-doherty-31b3981aa/',
       icon: 'fab fa-linkedin',
     },
+    {
+      name: 'Erin Flanagan',
+      title: 'Research Analyst',
+      image: '/pictures/team/Erin.jpeg',
+      description:
+        'Erin Flanagan is a senior Honors student at UNC-CH pursuing a B.A. degree in Environmental Studies. She is interested in the ways that economic, political, and social systems impact the health of people and the environment.',
+      social: 'https://www.linkedin.com/in/erin-m-flanagan/',
+      icon: 'fab fa-linkedin',
+    }
   ];
 
   const renderTeamSection = (title, members, extraClass = '') => (
