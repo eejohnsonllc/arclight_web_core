@@ -31,11 +31,18 @@ const Footer = () => {
             font-weight: bold !important;
             text-decoration: none !important;
             transition: color 0.2s ease !important;
+            line-height: 1 !important;
           }
           
           .footer a:hover {
             color: #f8f9fa !important;
             text-decoration: underline !important;
+          }
+
+          .footer .footer-separator {
+            color: white !important;
+            font-size: 1.3rem !important;
+            line-height: 1 !important;
           }
           
           .footer .content {
@@ -47,7 +54,7 @@ const Footer = () => {
             text-align: center !important;
           }
           
-          .footer .content div {
+          .footer .footer-links {
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
@@ -74,14 +81,13 @@ const Footer = () => {
               font-size: 1.1rem !important;
             }
             
-            .footer .content div {
+            .footer .footer-links {
               flex-direction: column !important;
               gap: 0.5rem !important;
               align-items: center !important;
             }
-            
-            .footer .content div a:not(:last-child)::after {
-              content: '';
+
+            .footer .footer-separator {
               display: none !important;
             }
           }
@@ -104,7 +110,7 @@ const Footer = () => {
               font-size: 1rem !important;
             }
             
-            .footer .content div {
+            .footer .footer-links {
               gap: 0.25rem !important;
             }
           }
@@ -136,9 +142,18 @@ const Footer = () => {
       <section className="pagefooter">
         <footer className="footer has-background-dark">
           <div className="content has-text-centered has-text-white">
-            <div>
-              <a href="/">ArcLight Analytics</a> |{' '}
+            <div className="footer-links">
+              <a href="/">ArcLight Analytics</a>
+              <span className="footer-separator">|</span>
               <a href="mailto:admin@arclightanalytics.com">admin@arclightanalytics.com</a>
+              <span className="footer-separator">|</span>
+              <a
+                href="https://www.linkedin.com/company/arclight-analytics/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         </footer>
