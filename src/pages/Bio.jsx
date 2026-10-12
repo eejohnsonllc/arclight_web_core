@@ -45,7 +45,7 @@ const Bio = () => {
               }}>
                 <p>
                   Dr. Evan Johnson is a researcher with the University of North Carolina at Chapel Hill with
-                  over ten years of experience in quantitative research and policy analysis. He has won NSF
+                  over fifteen years of experience in quantitative research and policy analysis. He has won NSF
                   grants to study government incentives for innovation and small businesses. Dr. Johnson and
                   his team are skilled in data analytics, data visualization, mapping, and programming. Their
                   work benefits clients in the public, private, and academic sectors looking to solve problems
