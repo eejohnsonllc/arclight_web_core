@@ -202,6 +202,19 @@ const Navbar = () => {
               background-color: #e9ecef !important;
             }
           }
+
+          .dropdown-header.archive-label {
+            font-size: 0.85rem !important;
+            font-weight: bold !important;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #5c6b6b !important;
+            padding-top: 0.75rem;
+          }
+
+          .dropdown-item.archive-item {
+            padding-left: 1.75rem !important;
+          }
         `}
       </style>
       <nav
@@ -311,20 +324,6 @@ const Navbar = () => {
                   <li>
                     <Link
                       className='dropdown-item'
-                      to='/projects/carolina-across-100'
-                      style={{
-                        fontWeight: 'bold',
-                        whiteSpace: 'normal',
-                        wordWrap: 'break-word',
-                        maxWidth: '300px',
-                      }}
-                    >
-                      Carolina Across 100 Initiative
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className='dropdown-item'
                       to='/projects/rapid-covid'
                       style={{
                         fontWeight: 'bold',
@@ -363,6 +362,42 @@ const Navbar = () => {
                     >
                       SBIR: Small Business Innovation & National Needs
                     </Link>
+                  </li>
+                  <li>
+                    <span className='dropdown-header archive-label'>
+                      Archive Projects
+                    </span>
+                  </li>
+                  <li>
+                    <Link
+                      className='dropdown-item archive-item'
+                      to='/projects/carolina-across-100'
+                      style={{
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        wordWrap: 'break-word',
+                        maxWidth: '300px',
+                      }}
+                    >
+                      Carolina Across 100 Initiative
+                    </Link>
+                  </li>
+                  <li>
+                    <a
+                      className='dropdown-item archive-item'
+                      href='https://www.sciencedirect.com/science/article/pii/S0048733321001943'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      style={{
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        wordWrap: 'break-word',
+                        maxWidth: '320px',
+                      }}
+                    >
+                      A Framework and Databases for Measuring Entrepreneurial
+                      Ecosystems
+                    </a>
                   </li>
                 </ul>
               </li>
