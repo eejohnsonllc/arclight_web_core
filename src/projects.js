@@ -49,5 +49,15 @@ export let projects = [
         projectimg: './pictures/grant.png',
         link: '/projects/grant-explorer',
         tool_link:'http://grantabstract-dev.us-east-1.elasticbeanstalk.com/'
+    },
+    {
+        projectid: 6,
+        projectname: 'NASA SBIR/STTR Collaboration Network',
+        projectkeywords: ['Network Analysis', 'SBIR', 'STTR', 'Data Visualization', 'Policy'],
+        projctdescription: 'Drawn from NASA TechPort, this map links 264 STTR-awardee small businesses to 214 research and NASA partner organizations through 765 documented collaborations from FY2015 to FY2024. NASA field centers anchor the network, while universities such as MIT, Stanford, and Carnegie Mellon form a second tier of frequent partners.',
+        projectspan: [],
+        tab: ['data-viz-tab', 'data-analysis-tab', 'policy-evaluation-tab'],
+        projectimg: '/pictures/nasa-sbir-network.jpg',
+        link: '/projects/nasa-sbir-network'
     }
 ]

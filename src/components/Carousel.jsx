@@ -356,6 +356,12 @@ const Carousel = () => {
             data-bs-slide-to='1'
             aria-label='Slide 2'
           ></button>
+          <button
+            type='button'
+            data-bs-target='#carouselExampleCaptions'
+            data-bs-slide-to='2'
+            aria-label='Slide 3'
+          ></button>
         </div>
 
         <div className='carousel-inner'>
@@ -486,6 +492,81 @@ const Carousel = () => {
                           >
                             See More
                           </a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 3 - NASA SBIR/STTR network */}
+          <div
+            className='carousel-item align-items-center justify-content-center'
+            style={{
+              backgroundImage:
+                "url('/pictures/Global Network Connections.png')",
+              height: 'auto',
+              minHeight: '600px',
+              padding: '2rem 0',
+            }}
+          >
+            <div className='item' style={{ height: '100%' }}>
+              <div className='container' style={{ height: '100%' }}>
+                <div
+                  className='row align-items-center'
+                  style={{ height: '100%' }}
+                >
+                  <section className='col-md-6 animated fadeIn align-items-center justify-content-center'>
+                    <figure className='image is-flex is-align-items-center is-justify-content-center'>
+                      <Link to='/projects/nasa-sbir-network'>
+                        <img
+                          className='opac'
+                          style={{
+                            width: 'auto',
+                            maxHeight: '460px',
+                            background: 'white',
+                            borderRadius: '8px',
+                          }}
+                          src='/pictures/nasa-sbir-network.jpg'
+                          alt='NASA SBIR/STTR Collaboration Network one-pager'
+                        />
+                      </Link>
+                    </figure>
+                  </section>
+                  <section className='col-md-5 animated fadeIn align-items-center justify-content-center'>
+                    <div className='card transparent_card'>
+                      <div className='card-body'>
+                        <h5 className='title has-text-white'>
+                          NASA SBIR/STTR Collaboration Network
+                        </h5>
+                        <div
+                          style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '1rem',
+                          }}
+                        >
+                          <p
+                            className='card-text'
+                            style={{ margin: 0, lineHeight: '1.6' }}
+                          >
+                            We mapped 765 NASA STTR collaborations from FY2015
+                            to FY2024, connecting 264 small businesses with 214
+                            research and NASA partners. Field centers anchor
+                            the network, with universities forming a second
+                            tier of frequent partners.
+                          </p>
+                          <Link
+                            to='/projects/nasa-sbir-network'
+                            className='button is-light is-primary'
+                            style={{
+                              alignSelf: 'flex-start',
+                            }}
+                          >
+                            See More
+                          </Link>
                         </div>
                       </div>
                     </div>

@@ -364,6 +364,20 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/projects/nasa-sbir-network'
+                      style={{
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        wordWrap: 'break-word',
+                        maxWidth: '300px',
+                      }}
+                    >
+                      NASA SBIR/STTR Collaboration Network
+                    </Link>
+                  </li>
+                  <li>
                     <span className='dropdown-header archive-label'>
                       Archive Projects
                     </span>

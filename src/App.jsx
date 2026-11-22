@@ -33,6 +33,7 @@ import CarolinaAcross100 from './pages/projects/CarolinaAcross100';
 import SbirSttr from './pages/projects/SbirSttr';
 import RapidCovid from './pages/projects/RapidCovid';
 import SmallBizNeeds from './pages/projects/SmallBizNeeds';
+import NasaSbirNetwork from './pages/projects/NasaSbirNetwork';
 
 function App() {
   useEffect(() => {
@@ -113,6 +114,10 @@ function App() {
           <Route path='/projects/sbir-sttr' element={<SbirSttr />} />
           <Route path='/projects/rapid-covid' element={<RapidCovid />} />
           <Route path='/projects/small-biz-needs' element={<SmallBizNeeds />} />
+          <Route
+            path='/projects/nasa-sbir-network'
+            element={<NasaSbirNetwork />}
+          />
         </Routes>
         <Footer />
       </div>
