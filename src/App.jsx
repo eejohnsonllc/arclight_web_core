@@ -34,6 +34,7 @@ import SbirSttr from './pages/projects/SbirSttr';
 import RapidCovid from './pages/projects/RapidCovid';
 import SmallBizNeeds from './pages/projects/SmallBizNeeds';
 import NasaSbirNetwork from './pages/projects/NasaSbirNetwork';
+import NasaNetworkAnalysis from './pages/projects/NasaNetworkAnalysis';
 
 function App() {
   useEffect(() => {
@@ -117,6 +118,10 @@ function App() {
           <Route
             path='/projects/nasa-sbir-network'
             element={<NasaSbirNetwork />}
+          />
+          <Route
+            path='/projects/nasa-network-analysis'
+            element={<NasaNetworkAnalysis />}
           />
         </Routes>
         <Footer />

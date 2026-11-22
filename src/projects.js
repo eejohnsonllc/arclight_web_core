@@ -59,5 +59,15 @@ export let projects = [
         tab: ['data-viz-tab', 'data-analysis-tab', 'policy-evaluation-tab'],
         projectimg: '/pictures/nasa-sbir-network.jpg',
         link: '/projects/nasa-sbir-network'
+    },
+    {
+        projectid: 7,
+        projectname: 'NASA SBIR/STTR Collaboration Network Analysis',
+        projectkeywords: ['Network Analysis', 'SBIR', 'STTR', 'Data Visualization', 'Policy'],
+        projctdescription: 'A written analysis of NASA’s STTR collaboration network, built in R from TechPort records for FY2015–FY2024. It measures each organization’s position in the program and the structure of the network, and the same measures can be extended across the full multi-agency SBIR/STTR record.',
+        projectspan: [],
+        tab: ['data-viz-tab', 'data-analysis-tab', 'policy-evaluation-tab'],
+        projectimg: '/pictures/nasa-network-analysis.jpg',
+        link: '/projects/nasa-network-analysis'
     }
 ]

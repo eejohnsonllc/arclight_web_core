@@ -362,6 +362,12 @@ const Carousel = () => {
             data-bs-slide-to='2'
             aria-label='Slide 3'
           ></button>
+          <button
+            type='button'
+            data-bs-target='#carouselExampleCaptions'
+            data-bs-slide-to='3'
+            aria-label='Slide 4'
+          ></button>
         </div>
 
         <div className='carousel-inner'>
@@ -560,6 +566,81 @@ const Carousel = () => {
                           </p>
                           <Link
                             to='/projects/nasa-sbir-network'
+                            className='button is-light is-primary'
+                            style={{
+                              alignSelf: 'flex-start',
+                            }}
+                          >
+                            See More
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 4 - NASA network analysis */}
+          <div
+            className='carousel-item align-items-center justify-content-center'
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80')",
+              height: 'auto',
+              minHeight: '600px',
+              padding: '2rem 0',
+            }}
+          >
+            <div className='item' style={{ height: '100%' }}>
+              <div className='container' style={{ height: '100%' }}>
+                <div
+                  className='row align-items-center'
+                  style={{ height: '100%' }}
+                >
+                  <section className='col-md-6 animated fadeIn align-items-center justify-content-center'>
+                    <figure className='image is-flex is-align-items-center is-justify-content-center'>
+                      <Link to='/projects/nasa-network-analysis'>
+                        <img
+                          className='opac'
+                          style={{
+                            width: 'auto',
+                            maxHeight: '420px',
+                            background: 'white',
+                            borderRadius: '8px',
+                          }}
+                          src='/pictures/nasa-network-analysis.jpg'
+                          alt='NASA STTR collaboration network map'
+                        />
+                      </Link>
+                    </figure>
+                  </section>
+                  <section className='col-md-5 animated fadeIn align-items-center justify-content-center'>
+                    <div className='card transparent_card'>
+                      <div className='card-body'>
+                        <h5 className='title has-text-white'>
+                          NASA SBIR/STTR Collaboration Network Analysis
+                        </h5>
+                        <div
+                          style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '1rem',
+                          }}
+                        >
+                          <p
+                            className='card-text'
+                            style={{ margin: 0, lineHeight: '1.6' }}
+                          >
+                            Built in R from NASA TechPort records, this analysis
+                            measures where each organization sits in the STTR
+                            network and how the program is structured. The same
+                            measures can be extended across the full
+                            multi-agency SBIR/STTR record.
+                          </p>
+                          <Link
+                            to='/projects/nasa-network-analysis'
                             className='button is-light is-primary'
                             style={{
                               alignSelf: 'flex-start',
