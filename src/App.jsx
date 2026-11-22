@@ -26,6 +26,8 @@ import About from './pages/About';
 import Alumni from './pages/Alumni';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Events from './pages/Events';
+import PastEvents from './pages/PastEvents';
 import Bio from './pages/Bio';
 import CarolinaAcross100 from './pages/projects/CarolinaAcross100';
 import SbirSttr from './pages/projects/SbirSttr';
@@ -101,6 +103,8 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/events' element={<Events />} />
+          <Route path='/events/past' element={<PastEvents />} />
           <Route path='/bio' element={<Bio />} />
           <Route
             path='/projects/carolina-across-100'

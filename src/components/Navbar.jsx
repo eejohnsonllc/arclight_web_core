@@ -417,6 +417,57 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
+              <li className='nav-item dropdown'>
+                <a
+                  className='nav-link dropdown-toggle'
+                  href='#'
+                  id='eventsDropdown'
+                  role='button'
+                  data-bs-toggle='dropdown'
+                  aria-expanded='false'
+                  style={{
+                    fontWeight: 'bold',
+                    border: 'none !important',
+                    borderTop: 'none !important',
+                    borderBottom: 'none !important',
+                    borderLeft: 'none !important',
+                    borderRight: 'none !important',
+                  }}
+                >
+                  Events
+                </a>
+                <ul
+                  className='dropdown-menu'
+                  aria-labelledby='eventsDropdown'
+                  style={{
+                    border: 'none !important',
+                    borderTop: 'none !important',
+                    borderBottom: 'none !important',
+                    borderLeft: 'none !important',
+                    borderRight: 'none !important',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                  }}
+                >
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/events'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      Upcoming
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/events/past'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      Past Events
+                    </Link>
+                  </li>
+                </ul>
+              </li>
               <li className='nav-item'>
                 <Link
                   className='nav-link'
