@@ -445,6 +445,22 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
+              <li className='nav-item'>
+                <Link
+                  className='nav-link'
+                  to='/capabilities'
+                  style={{
+                    fontWeight: 'bold',
+                    border: 'none !important',
+                    borderTop: 'none !important',
+                    borderBottom: 'none !important',
+                    borderLeft: 'none !important',
+                    borderRight: 'none !important',
+                  }}
+                >
+                  Capabilities
+                </Link>
+              </li>
               <li className='nav-item dropdown'>
                 <a
                   className='nav-link dropdown-toggle'

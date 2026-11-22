@@ -26,6 +26,7 @@ import About from './pages/About';
 import Alumni from './pages/Alumni';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Capabilities from './pages/Capabilities';
 import Events from './pages/Events';
 import PastEvents from './pages/PastEvents';
 import Bio from './pages/Bio';
@@ -103,6 +104,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/capabilities' element={<Capabilities />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/events' element={<Events />} />
