@@ -187,6 +187,11 @@ const Carousel = () => {
             margin-bottom: 1rem !important;
           }
 
+          .transparent_card .card-text::first-letter {
+            font-size: inherit;
+            font-weight: inherit;
+          }
+
           .transparent_card .button {
             background: rgba(255, 255, 255, 0.9) !important;
             color: #333 !important;
@@ -367,6 +372,12 @@ const Carousel = () => {
             data-bs-target='#carouselExampleCaptions'
             data-bs-slide-to='3'
             aria-label='Slide 4'
+          ></button>
+          <button
+            type='button'
+            data-bs-target='#carouselExampleCaptions'
+            data-bs-slide-to='4'
+            aria-label='Slide 5'
           ></button>
         </div>
 
@@ -641,6 +652,77 @@ const Carousel = () => {
                           </p>
                           <Link
                             to='/projects/nasa-network-analysis'
+                            className='button is-light is-primary'
+                            style={{
+                              alignSelf: 'flex-start',
+                            }}
+                          >
+                            See More
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 5 - ARC Server */}
+          <div
+            className='carousel-item align-items-center justify-content-center'
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80')",
+              height: 'auto',
+              minHeight: '600px',
+              padding: '2rem 0',
+            }}
+          >
+            <div className='item' style={{ height: '100%' }}>
+              <div className='container' style={{ height: '100%' }}>
+                <div
+                  className='row align-items-center'
+                  style={{ height: '100%' }}
+                >
+                  <section className='col-md-6 animated fadeIn align-items-center justify-content-center'>
+                    <figure className='image is-flex is-align-items-center is-justify-content-center'>
+                      <Link to='/about/arc-server'>
+                        <img
+                          className='opac'
+                          style={{
+                            width: 'auto',
+                            maxHeight: '420px',
+                            background: 'transparent',
+                          }}
+                          src='/pictures/arc-server.png'
+                          alt='Dell PowerEdge R760, front and rear'
+                        />
+                      </Link>
+                    </figure>
+                  </section>
+                  <section className='col-md-5 animated fadeIn align-items-center justify-content-center'>
+                    <div className='card transparent_card'>
+                      <div className='card-body'>
+                        <h5 className='title has-text-white'>ARC Server</h5>
+                        <div
+                          style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '1rem',
+                          }}
+                        >
+                          <p
+                            className='card-text'
+                            style={{ margin: 0, lineHeight: '1.6' }}
+                          >
+                            Arclight&apos;s own secure data platform. We bring
+                            scattered federal, state, commercial, and in-house
+                            data into one place, link it, and turn it into
+                            evaluations, maps, plans, and partner targets.
+                          </p>
+                          <Link
+                            to='/about/arc-server'
                             className='button is-light is-primary'
                             style={{
                               alignSelf: 'flex-start',

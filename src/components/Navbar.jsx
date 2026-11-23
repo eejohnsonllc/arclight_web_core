@@ -429,10 +429,14 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className='nav-item'>
-                <Link
-                  className='nav-link'
-                  to='/about'
+              <li className='nav-item dropdown'>
+                <a
+                  className='nav-link dropdown-toggle'
+                  href='#'
+                  id='aboutDropdown'
+                  role='button'
+                  data-bs-toggle='dropdown'
+                  aria-expanded='false'
                   style={{
                     fontWeight: 'bold',
                     border: 'none !important',
@@ -443,23 +447,47 @@ const Navbar = () => {
                   }}
                 >
                   About
-                </Link>
-              </li>
-              <li className='nav-item'>
-                <Link
-                  className='nav-link'
-                  to='/capabilities'
+                </a>
+                <ul
+                  className='dropdown-menu'
+                  aria-labelledby='aboutDropdown'
                   style={{
-                    fontWeight: 'bold',
                     border: 'none !important',
                     borderTop: 'none !important',
                     borderBottom: 'none !important',
                     borderLeft: 'none !important',
                     borderRight: 'none !important',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
                   }}
                 >
-                  Capabilities
-                </Link>
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/about'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/about/capabilities'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      Capabilities
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/about/arc-server'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      ARC Server
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className='nav-item dropdown'>
                 <a

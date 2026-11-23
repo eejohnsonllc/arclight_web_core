@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import AOS from 'aos';
 
@@ -27,6 +27,7 @@ import Alumni from './pages/Alumni';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Capabilities from './pages/Capabilities';
+import ArcServer from './pages/ArcServer';
 import Events from './pages/Events';
 import PastEvents from './pages/PastEvents';
 import Bio from './pages/Bio';
@@ -104,7 +105,16 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/capabilities' element={<Capabilities />} />
+          <Route path='/about/capabilities' element={<Capabilities />} />
+          <Route path='/about/arc-server' element={<ArcServer />} />
+          <Route
+            path='/about/capabilities/server'
+            element={<Navigate to='/about/arc-server' replace />}
+          />
+          <Route
+            path='/capabilities'
+            element={<Navigate to='/about/capabilities' replace />}
+          />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/events' element={<Events />} />
