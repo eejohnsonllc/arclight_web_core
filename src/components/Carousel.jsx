@@ -187,6 +187,11 @@ const Carousel = () => {
             margin-bottom: 1rem !important;
           }
 
+          .transparent_card .card-text::first-letter {
+            font-size: inherit;
+            font-weight: inherit;
+          }
+
           .transparent_card .button {
             background: rgba(255, 255, 255, 0.9) !important;
             color: #333 !important;
@@ -368,87 +373,18 @@ const Carousel = () => {
             data-bs-slide-to='3'
             aria-label='Slide 4'
           ></button>
+          <button
+            type='button'
+            data-bs-target='#carouselExampleCaptions'
+            data-bs-slide-to='4'
+            aria-label='Slide 5'
+          ></button>
         </div>
 
         <div className='carousel-inner'>
-          {/* Slide 1 - Carolina Across 100 */}
+          {/* Slide 1 - SBIR DOE */}
           <div
             className='carousel-item active align-items-center justify-content-center'
-            style={{
-              backgroundImage:
-                "url('https://images.pexels.com/photos/3970329/pexels-photo-3970329.jpeg?cs=srgb&dl=pexels-markus-spiske-3970329.jpg&fm=jpg')",
-              height: 'auto',
-              minHeight: '600px',
-              padding: '2rem 0',
-            }}
-          >
-            <div className='item' style={{ height: '100%' }}>
-              <div className='container' style={{ height: '100%' }}>
-                <div
-                  className='row align-items-center'
-                  style={{ height: '100%' }}
-                >
-                  <section className='col-md-6 animated fadeIn'>
-                    <figure className='image is-4by3'>
-                      <a
-                        href='https://carolinaacross100.unc.edu/data/'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        <img
-                          className='opac'
-                          src='/pictures/CX100 gif for home page.gif'
-                          alt=''
-                        />
-                      </a>
-                    </figure>
-                  </section>
-                  <section className='col-md-4 animated fadeIn'>
-                    <div className='card transparent_card'>
-                      <div className='card-body'>
-                        <h5 className='title has-text-white'>
-                          Carolina Across 100 Initiative Survey Data Analysis
-                        </h5>
-                        <div
-                          style={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                            gap: '1rem',
-                          }}
-                        >
-                          <p
-                            className='card-text'
-                            style={{ margin: 0, lineHeight: '1.6' }}
-                          >
-                            Using a suite of data analytics tools, we were able
-                            to identify common areas of concern and trends in
-                            expectations about recovery from the pandemic. We
-                            then created visualizations to present these trends
-                            to the initiative's stakeholders, to inform their
-                            decisions about how the university can help
-                            communities across the state.
-                          </p>
-                          <Link
-                            to='/projects/carolina-across-100'
-                            className='button is-light is-primary'
-                            style={{
-                              alignSelf: 'flex-start',
-                            }}
-                          >
-                            See More
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Slide 2 - SBIR DOE */}
-          <div
-            className='carousel-item align-items-center justify-content-center'
             style={{
               backgroundImage:
                 "url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80')",
@@ -514,7 +450,7 @@ const Carousel = () => {
             </div>
           </div>
 
-          {/* Slide 3 - SBIR NIH */}
+          {/* Slide 2 - SBIR NIH */}
           <div
             className='carousel-item align-items-center justify-content-center'
             style={{
@@ -582,12 +518,12 @@ const Carousel = () => {
             </div>
           </div>
 
-          {/* Slide 4 - Framework */}
+          {/* Slide 3 - NASA SBIR/STTR network */}
           <div
             className='carousel-item align-items-center justify-content-center'
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
+                "url('/pictures/Global Network Connections.png')",
               height: 'auto',
               minHeight: '600px',
               padding: '2rem 0',
@@ -601,20 +537,26 @@ const Carousel = () => {
                 >
                   <section className='col-md-6 animated fadeIn align-items-center justify-content-center'>
                     <figure className='image is-flex is-align-items-center is-justify-content-center'>
-                      <img
-                        className='opac'
-                        style={{ width: 'auto', maxHeight: '50%' }}
-                        src='https://ars.els-cdn.com/content/image/1-s2.0-S0048733321001943-gr2.jpg'
-                        alt=''
-                      />
+                      <Link to='/projects/nasa-sbir-network'>
+                        <img
+                          className='opac'
+                          style={{
+                            width: 'auto',
+                            maxHeight: '460px',
+                            background: 'white',
+                            borderRadius: '8px',
+                          }}
+                          src='/pictures/nasa-sbir-network.jpg'
+                          alt='NASA SBIR/STTR Collaboration Network one-pager'
+                        />
+                      </Link>
                     </figure>
                   </section>
                   <section className='col-md-5 animated fadeIn align-items-center justify-content-center'>
                     <div className='card transparent_card'>
                       <div className='card-body'>
                         <h5 className='title has-text-white'>
-                          A Framework and Databases for Measuring
-                          Entrepreneurial Ecosystems
+                          NASA SBIR/STTR Collaboration Network
                         </h5>
                         <div
                           style={{
@@ -627,24 +569,21 @@ const Carousel = () => {
                             className='card-text'
                             style={{ margin: 0, lineHeight: '1.6' }}
                           >
-                            We offer a framework for measurement that places
-                            collaborative relationships among entrepreneurs,
-                            firms, government agencies, and research
-                            institutions at the center of the ecosystem concept.
-                            A major advantage of our approach is that all the
-                            underlying databases are drawn from
-                            non-confidential, publicly available sources that
-                            are transparently disclosed and regularly updated.
+                            We mapped 765 NASA STTR collaborations from FY2015
+                            to FY2024, connecting 264 small businesses with 214
+                            research and NASA partners. Field centers anchor
+                            the network, with universities forming a second
+                            tier of frequent partners.
                           </p>
-                          <a
-                            href='https://www.sciencedirect.com/science/article/pii/S0048733321001943'
+                          <Link
+                            to='/projects/nasa-sbir-network'
                             className='button is-light is-primary'
                             style={{
                               alignSelf: 'flex-start',
                             }}
                           >
                             See More
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -653,6 +592,153 @@ const Carousel = () => {
               </div>
             </div>
           </div>
+
+          {/* Slide 4 - NASA network analysis */}
+          <div
+            className='carousel-item align-items-center justify-content-center'
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80')",
+              height: 'auto',
+              minHeight: '600px',
+              padding: '2rem 0',
+            }}
+          >
+            <div className='item' style={{ height: '100%' }}>
+              <div className='container' style={{ height: '100%' }}>
+                <div
+                  className='row align-items-center'
+                  style={{ height: '100%' }}
+                >
+                  <section className='col-md-6 animated fadeIn align-items-center justify-content-center'>
+                    <figure className='image is-flex is-align-items-center is-justify-content-center'>
+                      <Link to='/projects/nasa-network-analysis'>
+                        <img
+                          className='opac'
+                          style={{
+                            width: 'auto',
+                            maxHeight: '420px',
+                            background: 'white',
+                            borderRadius: '8px',
+                          }}
+                          src='/pictures/nasa-network-analysis.jpg'
+                          alt='NASA STTR collaboration network map'
+                        />
+                      </Link>
+                    </figure>
+                  </section>
+                  <section className='col-md-5 animated fadeIn align-items-center justify-content-center'>
+                    <div className='card transparent_card'>
+                      <div className='card-body'>
+                        <h5 className='title has-text-white'>
+                          NASA SBIR/STTR Collaboration Network Analysis
+                        </h5>
+                        <div
+                          style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '1rem',
+                          }}
+                        >
+                          <p
+                            className='card-text'
+                            style={{ margin: 0, lineHeight: '1.6' }}
+                          >
+                            Built in R from NASA TechPort records, this analysis
+                            measures where each organization sits in the STTR
+                            network and how the program is structured. The same
+                            measures can be extended across the full
+                            multi-agency SBIR/STTR record.
+                          </p>
+                          <Link
+                            to='/projects/nasa-network-analysis'
+                            className='button is-light is-primary'
+                            style={{
+                              alignSelf: 'flex-start',
+                            }}
+                          >
+                            See More
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slide 5 - ARC Server */}
+          <div
+            className='carousel-item align-items-center justify-content-center'
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80')",
+              height: 'auto',
+              minHeight: '600px',
+              padding: '2rem 0',
+            }}
+          >
+            <div className='item' style={{ height: '100%' }}>
+              <div className='container' style={{ height: '100%' }}>
+                <div
+                  className='row align-items-center'
+                  style={{ height: '100%' }}
+                >
+                  <section className='col-md-6 animated fadeIn align-items-center justify-content-center'>
+                    <figure className='image is-flex is-align-items-center is-justify-content-center'>
+                      <Link to='/about/arc-server'>
+                        <img
+                          className='opac'
+                          style={{
+                            width: 'auto',
+                            maxHeight: '420px',
+                            background: 'transparent',
+                          }}
+                          src='/pictures/arc-server.png'
+                          alt='Dell PowerEdge R760, front and rear'
+                        />
+                      </Link>
+                    </figure>
+                  </section>
+                  <section className='col-md-5 animated fadeIn align-items-center justify-content-center'>
+                    <div className='card transparent_card'>
+                      <div className='card-body'>
+                        <h5 className='title has-text-white'>ARC Server</h5>
+                        <div
+                          style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '1rem',
+                          }}
+                        >
+                          <p
+                            className='card-text'
+                            style={{ margin: 0, lineHeight: '1.6' }}
+                          >
+                            Arclight&apos;s own secure data platform. We bring
+                            scattered federal, state, commercial, and in-house
+                            data into one place, link it, and turn it into
+                            evaluations, maps, plans, and partner targets.
+                          </p>
+                          <Link
+                            to='/about/arc-server'
+                            className='button is-light is-primary'
+                            style={{
+                              alignSelf: 'flex-start',
+                            }}
+                          >
+                            See More
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <button

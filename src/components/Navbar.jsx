@@ -202,6 +202,19 @@ const Navbar = () => {
               background-color: #e9ecef !important;
             }
           }
+
+          .dropdown-header.archive-label {
+            font-size: 0.85rem !important;
+            font-weight: bold !important;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #5c6b6b !important;
+            padding-top: 0.75rem;
+          }
+
+          .dropdown-item.archive-item {
+            padding-left: 1.75rem !important;
+          }
         `}
       </style>
       <nav
@@ -311,20 +324,6 @@ const Navbar = () => {
                   <li>
                     <Link
                       className='dropdown-item'
-                      to='/projects/carolina-across-100'
-                      style={{
-                        fontWeight: 'bold',
-                        whiteSpace: 'normal',
-                        wordWrap: 'break-word',
-                        maxWidth: '300px',
-                      }}
-                    >
-                      Carolina Across 100 Initiative
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className='dropdown-item'
                       to='/projects/rapid-covid'
                       style={{
                         fontWeight: 'bold',
@@ -364,12 +363,80 @@ const Navbar = () => {
                       SBIR: Small Business Innovation & National Needs
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/projects/nasa-sbir-network'
+                      style={{
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        wordWrap: 'break-word',
+                        maxWidth: '300px',
+                      }}
+                    >
+                      NASA SBIR/STTR Collaboration Network
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/projects/nasa-network-analysis'
+                      style={{
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        wordWrap: 'break-word',
+                        maxWidth: '300px',
+                      }}
+                    >
+                      NASA SBIR/STTR Network Analysis
+                    </Link>
+                  </li>
+                  <li>
+                    <span className='dropdown-header archive-label'>
+                      Archive Projects
+                    </span>
+                  </li>
+                  <li>
+                    <Link
+                      className='dropdown-item archive-item'
+                      to='/projects/carolina-across-100'
+                      style={{
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        wordWrap: 'break-word',
+                        maxWidth: '300px',
+                      }}
+                    >
+                      Carolina Across 100 Initiative
+                    </Link>
+                  </li>
+                  <li>
+                    <a
+                      className='dropdown-item archive-item'
+                      href='https://www.sciencedirect.com/science/article/pii/S0048733321001943'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      style={{
+                        fontWeight: 'bold',
+                        whiteSpace: 'normal',
+                        wordWrap: 'break-word',
+                        maxWidth: '320px',
+                      }}
+                    >
+                      A Framework and Databases for Measuring Entrepreneurial
+                      Ecosystems
+                    </a>
+                  </li>
                 </ul>
               </li>
-              <li className='nav-item'>
-                <Link
-                  className='nav-link'
-                  to='/about'
+              <li className='nav-item dropdown'>
+                <a
+                  className='nav-link dropdown-toggle'
+                  href='#'
+                  id='aboutDropdown'
+                  role='button'
+                  data-bs-toggle='dropdown'
+                  aria-expanded='false'
                   style={{
                     fontWeight: 'bold',
                     border: 'none !important',
@@ -380,7 +447,98 @@ const Navbar = () => {
                   }}
                 >
                   About
-                </Link>
+                </a>
+                <ul
+                  className='dropdown-menu'
+                  aria-labelledby='aboutDropdown'
+                  style={{
+                    border: 'none !important',
+                    borderTop: 'none !important',
+                    borderBottom: 'none !important',
+                    borderLeft: 'none !important',
+                    borderRight: 'none !important',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                  }}
+                >
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/about'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/about/capabilities'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      Capabilities
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/about/arc-server'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      ARC Server
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className='nav-item dropdown'>
+                <a
+                  className='nav-link dropdown-toggle'
+                  href='#'
+                  id='eventsDropdown'
+                  role='button'
+                  data-bs-toggle='dropdown'
+                  aria-expanded='false'
+                  style={{
+                    fontWeight: 'bold',
+                    border: 'none !important',
+                    borderTop: 'none !important',
+                    borderBottom: 'none !important',
+                    borderLeft: 'none !important',
+                    borderRight: 'none !important',
+                  }}
+                >
+                  Events
+                </a>
+                <ul
+                  className='dropdown-menu'
+                  aria-labelledby='eventsDropdown'
+                  style={{
+                    border: 'none !important',
+                    borderTop: 'none !important',
+                    borderBottom: 'none !important',
+                    borderLeft: 'none !important',
+                    borderRight: 'none !important',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                  }}
+                >
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/events'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      Upcoming
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className='dropdown-item'
+                      to='/events/past'
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      Past Events
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className='nav-item'>
                 <Link

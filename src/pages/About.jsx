@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const About = () => {
   const currentTeam = [
     {
@@ -205,6 +207,14 @@ const About = () => {
                   moving forward.
                 </div>
               </article>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+                <Link to='/about/capabilities' className='button is-primary'>
+                  Capabilities
+                </Link>
+                <Link to='/about/arc-server' className='button is-primary'>
+                  ARC Server
+                </Link>
+              </div>
             </div>
           </div>
         </div>

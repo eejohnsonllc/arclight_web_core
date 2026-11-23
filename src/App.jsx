@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import AOS from 'aos';
 
@@ -26,11 +26,17 @@ import About from './pages/About';
 import Alumni from './pages/Alumni';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Capabilities from './pages/Capabilities';
+import ArcServer from './pages/ArcServer';
+import Events from './pages/Events';
+import PastEvents from './pages/PastEvents';
 import Bio from './pages/Bio';
 import CarolinaAcross100 from './pages/projects/CarolinaAcross100';
 import SbirSttr from './pages/projects/SbirSttr';
 import RapidCovid from './pages/projects/RapidCovid';
 import SmallBizNeeds from './pages/projects/SmallBizNeeds';
+import NasaSbirNetwork from './pages/projects/NasaSbirNetwork';
+import NasaNetworkAnalysis from './pages/projects/NasaNetworkAnalysis';
 
 function App() {
   useEffect(() => {
@@ -99,8 +105,20 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/about/capabilities' element={<Capabilities />} />
+          <Route path='/about/arc-server' element={<ArcServer />} />
+          <Route
+            path='/about/capabilities/server'
+            element={<Navigate to='/about/arc-server' replace />}
+          />
+          <Route
+            path='/capabilities'
+            element={<Navigate to='/about/capabilities' replace />}
+          />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/events' element={<Events />} />
+          <Route path='/events/past' element={<PastEvents />} />
           <Route path='/bio' element={<Bio />} />
           <Route
             path='/projects/carolina-across-100'
@@ -109,6 +127,14 @@ function App() {
           <Route path='/projects/sbir-sttr' element={<SbirSttr />} />
           <Route path='/projects/rapid-covid' element={<RapidCovid />} />
           <Route path='/projects/small-biz-needs' element={<SmallBizNeeds />} />
+          <Route
+            path='/projects/nasa-sbir-network'
+            element={<NasaSbirNetwork />}
+          />
+          <Route
+            path='/projects/nasa-network-analysis'
+            element={<NasaNetworkAnalysis />}
+          />
         </Routes>
         <Footer />
       </div>
